@@ -1,11 +1,13 @@
-name: Playwright Tests
+name: CI
 on:
   push:
-    branches: [ main, master ]
+    branches: [ "new_tests" ]
   pull_request:
-    branches: [ main, master ]
+    branches: [ "new_tests" ]
+  workflow_dispatch:
+
 jobs:
-  test:
+  build:
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
