@@ -22,6 +22,6 @@ test.describe('Checkout', () => {
     await inventoryPage.openCart();
     await cartPage.checkout();
     await checkoutPage.continueButton.click();
-    await expect(checkoutPage.firstNameInput).toBeFocused();
+    await expect(checkoutPage.Errormessage).toBeVisible();
   });
 });
