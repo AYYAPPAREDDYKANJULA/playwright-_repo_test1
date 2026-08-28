@@ -6,7 +6,6 @@ test('putresuest', async({request})=>{
         {
             username :'Ayyappa',
             email : "test@gmail.com"
-            
         }
     })
     const responcebody=await responce.json();
