@@ -20,6 +20,7 @@ test.describe('Inventory / cart', () => {
     await inventoryPage.sortBy('lohi');
     const names = await inventoryPage.getItemNames();
     expect(names.length).toBeGreaterThan(0);
+    
   });
 
   test('added items appear in cart', async ({ loggedInPage, inventoryPage, cartPage }) => {
