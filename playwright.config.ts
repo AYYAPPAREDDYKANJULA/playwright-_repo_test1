@@ -35,6 +35,12 @@ export default defineConfig({
   /* Configure projects for major browsers */
   projects: [
     {
+      name: 'restful-booker',
+      use: {
+        baseURL: 'https://restful-booker.herokuapp.com',
+      },
+    },
+    {
       name: 'API TEST',
       testMatch: /(?:createuser|delete|ある|getUserdetails|post|put).*\.test\.ts|(?:createuser|getUserdetails|post|put).*\.spec\.ts/,
     },
