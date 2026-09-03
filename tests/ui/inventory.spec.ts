@@ -9,7 +9,6 @@ test.describe('Inventory / cart', () => {
     await inventoryPage.addItemToCart(BACKPACK);
     await expect(inventoryPage.cartBadge).toHaveText('1');
   });
-
   test('remove item empties the cart', async ({ loggedInPage, inventoryPage }) => {
     await inventoryPage.addItemToCart(BACKPACK);
     await inventoryPage.removeItemFromCart(BACKPACK);
